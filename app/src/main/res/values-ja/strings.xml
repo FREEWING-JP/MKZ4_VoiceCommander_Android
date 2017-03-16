@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MKZ4 VoiceCommander</string>
+    <string name="command">MKZ4 コマンド</string>
+    <string name="recognition_result">認識結果</string>
+    <string name="speech_recognition_please_start">音声認識を開始してください</string>
+    <string name="speech_recognition_start">音声認識を開始する</string>
+    <string name="speech_recognition_denied">音声認識機能の利用が許可されませんでした</string>
+    <string name="speech_recognition_restricted">この端末では音声認識機能が制限されています</string>
+    <string name="speech_recognition_disabled">音声認識機能が有効になっていません</string>
+    <string name="speech_recognition_stopping">音声認識を停止中…</string>
+    <string name="speech_recognition_listening">(認識中…)</string>
+    <string name="speech_recognition_stop">音声認識を停止する</string>
+    <string name="speech_recognition_not_available">音声認識が利用できません</string>
+    <string name="speech_recognition_failed_to_start">音声認識開始時にでエラーが起こりました</string>
+    <string name="speech_recognition_please_grant">音声認識のため、録音を許可してください</string>
+</resources>

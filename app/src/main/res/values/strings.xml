@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MKZ4 VoiceCommander</string>
+    <string name="command">MKZ4 Command</string>
+    <string name="recognition_result">Recognition Result</string>
+    <string name="speech_recognition_please_start">Please Tap Start Recording</string>
+    <string name="speech_recognition_start">Start recording</string>
+    <string name="speech_recognition_denied">User denied access to speech recognition</string>
+    <string name="speech_recognition_restricted">Speech recognition restricted on this device</string>
+    <string name="speech_recognition_disabled">Speech recognition not yet authorized</string>
+    <string name="speech_recognition_stopping">Stopping&#8230;</string>
+    <string name="speech_recognition_listening">(listening…)</string>
+    <string name="speech_recognition_stop">Stop recording</string>
+    <string name="speech_recognition_not_available">Recognition not available</string>
+    <string name="speech_recognition_failed_to_start">Failed to start recognition</string>
+    <string name="speech_recognition_please_grant">Please grant record permission to speech recognition.</string>
+</resources>
