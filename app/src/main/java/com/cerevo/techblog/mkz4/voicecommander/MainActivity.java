@@ -273,7 +273,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (sendingCommand != Mkz4ApiCaller.Command.None) {
             //Mkz4ApiCaller.getInstance().sendCommand(sendingCommand);
-            MilkCocoaClient.getInstance().sendCommand(sendingCommand);
+            try {
+                MilkCocoaClient.getInstance().sendCommand(sendingCommand);
+            } catch(NullPointerException e) {
+                Toast.makeText(this, R.string.failed_to_send_command_to_milkcocoa, Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
         }
         mCommandTextView.setText(sendingCommand.getCommand());
     }

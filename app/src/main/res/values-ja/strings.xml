@@ -14,4 +14,5 @@
     <string name="speech_recognition_not_available">音声認識が利用できません</string>
     <string name="speech_recognition_failed_to_start">音声認識開始時にでエラーが起こりました</string>
     <string name="speech_recognition_please_grant">音声認識のため、録音を許可してください</string>
+    <string name="failed_to_send_command_to_milkcocoa">コマンドの送信に失敗しました。 milkcocoaAppID、milkcocoaDataStore が正しく設定されていない可能性があります。</string>
 </resources>

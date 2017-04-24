@@ -13,4 +13,5 @@
     <string name="speech_recognition_not_available">Recognition not available</string>
     <string name="speech_recognition_failed_to_start">Failed to start recognition</string>
     <string name="speech_recognition_please_grant">Please grant record permission to speech recognition.</string>
+    <string name="failed_to_send_command_to_milkcocoa">Failed to send command. milkcocoaAppID and/or milkcocoaDataStore might not be set.</string>
 </resources>
