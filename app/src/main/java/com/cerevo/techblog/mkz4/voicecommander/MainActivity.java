@@ -291,7 +291,7 @@ public class MainActivity extends AppCompatActivity {
         Locale locale = Locale.getDefault();
         if (locale.equals(Locale.JAPAN)) {
             mCommandSet.put(Mkz4ApiCaller.Command.Forward,
-                    new ArrayList<>(Arrays.asList("進", "行", "いけ", "スタート", "すすめ", "池", "前", "ゴー")));
+                    new ArrayList<>(Arrays.asList("進", "行", "いけ", "スタート", "すすめ", "池", "前", "ゴー", "パンツァー・フォー", "ハンター4", "パンツァーフォー")));
             mCommandSet.put(Mkz4ApiCaller.Command.Back,
                     new ArrayList<>(Arrays.asList("後", "下", "バック", "佐賀")));
             mCommandSet.put(Mkz4ApiCaller.Command.Left,
