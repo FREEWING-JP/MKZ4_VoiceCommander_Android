@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         initCommandSet();
+        MilkCocoaClient.getInstance().connect();
     }
 
     @Override
@@ -271,7 +272,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (sendingCommand != Mkz4ApiCaller.Command.None) {
-            Mkz4ApiCaller.getInstance().sendCommand(sendingCommand);
+            //Mkz4ApiCaller.getInstance().sendCommand(sendingCommand);
+            MilkCocoaClient.getInstance().sendCommand(sendingCommand);
         }
         mCommandTextView.setText(sendingCommand.getCommand());
     }
