@@ -1,6 +1,5 @@
 package com.cerevo.techblog.mkz4.voicecommander;
 
-import android.os.Handler;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 
