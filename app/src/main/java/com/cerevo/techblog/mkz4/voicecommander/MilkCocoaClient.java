@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import com.mlkcca.client.DataElementValue;
 import com.mlkcca.client.DataStore;
 import com.mlkcca.client.MilkCocoa;
+import com.mlkcca.client.SystemEventListener;
 
 
 // Reference
@@ -24,6 +25,7 @@ class MilkCocoaClient {
     private ArrayAdapter<String> adapter;
     private MilkCocoa milkcocoa;
     private DataStore messagesDataStore;
+    private boolean isConnected = false;
 
     private static MilkCocoaClient sInstance = new MilkCocoaClient();
 
@@ -34,16 +36,27 @@ class MilkCocoaClient {
     void connect() {
         try {
             this.milkcocoa = new MilkCocoa(milkcocoaAppID);
+            this.milkcocoa.setSystemEventListener(new SystemEventListener() {
+                @Override
+                public void onConnectionLost() {
+                    Log.d(TAG, "connection lost.");
+                    MilkCocoaClient.this.isConnected = false;
+                }
+            });
         } catch (Exception e) {
             e.printStackTrace();
             return;
         }
 
         this.messagesDataStore = this.milkcocoa.dataStore(milkcocoaDataStore);
+        this.isConnected = true;
         Log.d(TAG, "milkcocoa connected.");
     }
 
     void sendCommand(Mkz4ApiCaller.Command command) {
+        if (!this.isConnected) {
+            connect();
+        }
         DataElementValue params = new DataElementValue();
         params.put("com", getMilkcocoaCommand(command));
         this.messagesDataStore.push(params);
